@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+    color: #413B3B;
+    background-color: #FAF7F2;
+  }
+
+  ::selection {
+    background-color: #F4DCE0;
+    color: #413B3B;
+  }
+}
+
+/* Custom delicate luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #DEC5B1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B87983;
+}
+
+/* Paper texture effect */
+.paper-texture {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(#EBDCCE 0.75px, transparent 0.75px), radial-gradient(#EBDCCE 0.75px, #FAF7F2 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.luxury-shadow {
+  box-shadow: 0 20px 40px -15px rgba(184, 121, 131, 0.08), 0 0 25px rgba(222, 197, 177, 0.15);
+}
+
+.luxury-card-shadow {
+  box-shadow: 0 10px 30px -5px rgba(65, 59, 59, 0.04), 0 0 0 1px rgba(235, 220, 206, 0.6);
+}
+
+.glow-soft {
+  filter: drop-shadow(0 0 15px rgba(244, 220, 224, 0.8));
+}
+
+/* Rotating circular text animation */
+@keyframes spinClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinClockwise 35s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spinClockwise 45s linear infinite reverse;
+}
+

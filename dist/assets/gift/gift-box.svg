@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Box Body Radial Shadow -->
+    <radialGradient id="boxShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#413B3B" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#413B3B" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#413B3B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Luxury Blush Pink Gradient for Box Body -->
+    <linearGradient id="boxBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF1F3"/>
+      <stop offset="35%" stop-color="#F4DCE0"/>
+      <stop offset="75%" stop-color="#E8C3CA"/>
+      <stop offset="100%" stop-color="#D9AAB3"/>
+    </linearGradient>
+
+    <!-- Luxury Blush Pink Gradient for Box Lid -->
+    <linearGradient id="boxLidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#FAF0F2"/>
+      <stop offset="70%" stop-color="#F2D3D8"/>
+      <stop offset="100%" stop-color="#DEB5BD"/>
+    </linearGradient>
+
+    <!-- Metallic Rose Gold Ribbon Gradient -->
+    <linearGradient id="goldRibbonH" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5AA8A"/>
+      <stop offset="20%" stop-color="#FBE6D8"/>
+      <stop offset="50%" stop-color="#B87983"/>
+      <stop offset="80%" stop-color="#8C4E57"/>
+      <stop offset="100%" stop-color="#F5DDD2"/>
+    </linearGradient>
+
+    <linearGradient id="goldRibbonV" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E5AA8A"/>
+      <stop offset="25%" stop-color="#FBE6D8"/>
+      <stop offset="50%" stop-color="#B87983"/>
+      <stop offset="75%" stop-color="#8C4E57"/>
+      <stop offset="100%" stop-color="#F5DDD2"/>
+    </linearGradient>
+
+    <!-- Silk Satin Bow Loop Gradient -->
+    <linearGradient id="bowLoopLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2EA"/>
+      <stop offset="30%" stop-color="#DCA58E"/>
+      <stop offset="70%" stop-color="#B87983"/>
+      <stop offset="100%" stop-color="#733942"/>
+    </linearGradient>
+
+    <linearGradient id="bowLoopRight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2EA"/>
+      <stop offset="30%" stop-color="#DCA58E"/>
+      <stop offset="70%" stop-color="#B87983"/>
+      <stop offset="100%" stop-color="#733942"/>
+    </linearGradient>
+
+    <!-- Golden Monogram Seal Gradient -->
+    <linearGradient id="goldSeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5D1"/>
+      <stop offset="35%" stop-color="#E7C56A"/>
+      <stop offset="70%" stop-color="#B88A28"/>
+      <stop offset="100%" stop-color="#8C6311"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Ground Shadow -->
+  <ellipse cx="300" cy="520" rx="220" ry="45" fill="url(#boxShadow)"/>
+
+  <!-- 1. MAIN BOX BASE (LOWER SECTION) -->
+  <rect x="125" y="240" width="350" height="250" rx="36" fill="url(#boxBodyGrad)" stroke="#DEC5B1" stroke-width="2"/>
+  
+  <!-- Subtle specular side bevel on box body -->
+  <path d="M 125,276 Q 125,240 161,240 L 439,240 Q 475,240 475,276 L 475,290 L 125,290 Z" fill="#FFFFFF" opacity="0.3"/>
+
+  <!-- Vertical Ribbon on Body -->
+  <rect x="268" y="240" width="64" height="250" fill="url(#goldRibbonV)"/>
+  <rect x="296" y="240" width="8" height="250" fill="#FFFFFF" opacity="0.45"/>
+
+  <!-- Horizontal Ribbon on Body -->
+  <rect x="125" y="335" width="350" height="64" fill="url(#goldRibbonH)"/>
+  <rect x="125" y="363" width="350" height="8" fill="#FFFFFF" opacity="0.45"/>
+
+  <!-- 2. BOX LID (SLIGHTLY WIDER WITH OVERHANG & DROP SHADOW) -->
+  <!-- Lid Drop Shadow onto Box Base -->
+  <rect x="110" y="235" width="380" height="25" rx="10" fill="#3A3032" opacity="0.18"/>
+
+  <!-- Lid Main Rectangle -->
+  <rect x="105" y="160" width="390" height="85" rx="24" fill="url(#boxLidGrad)" stroke="#DEC5B1" stroke-width="2"/>
+  <rect x="105" y="160" width="390" height="15" rx="8" fill="#FFFFFF" opacity="0.5"/>
+
+  <!-- Lid Vertical Ribbon -->
+  <rect x="268" y="160" width="64" height="85" fill="url(#goldRibbonV)"/>
+  <rect x="296" y="160" width="8" height="85" fill="#FFFFFF" opacity="0.5"/>
+
+  <!-- 3. REALISTIC LUXURY SATIN BOW ON TOP -->
+  <!-- Left Bow Ribbon End / Tail -->
+  <path d="M 285,175 C 240,210 200,260 185,320 C 215,310 240,305 260,300 C 270,250 280,210 285,175 Z" fill="url(#bowLoopLeft)"/>
+
+  <!-- Right Bow Ribbon End / Tail -->
+  <path d="M 315,175 C 360,210 400,260 415,320 C 385,310 360,305 340,300 C 330,250 320,210 315,175 Z" fill="url(#bowLoopRight)"/>
+
+  <!-- Left Bow Loop -->
+  <path d="M 300,165 C 240,110 130,95 135,165 C 140,225 250,195 300,175 Z" fill="url(#bowLoopLeft)" stroke="#B87983" stroke-width="1.5"/>
+  <path d="M 275,168 C 220,130 165,125 160,165 C 160,190 220,180 275,172 Z" fill="#4A2228" opacity="0.35"/>
+
+  <!-- Right Bow Loop -->
+  <path d="M 300,165 C 360,110 470,95 465,165 C 460,225 350,195 300,175 Z" fill="url(#bowLoopRight)" stroke="#B87983" stroke-width="1.5"/>
+  <path d="M 325,168 C 380,130 435,125 440,165 C 440,190 380,180 325,172 Z" fill="#4A2228" opacity="0.35"/>
+
+  <!-- Center Knot of Bow -->
+  <ellipse cx="300" cy="168" rx="28" ry="24" fill="url(#goldRibbonH)" stroke="#FFFFFF" stroke-width="1.5"/>
+  <ellipse cx="295" cy="163" rx="14" ry="10" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- 4. GOLDEN MONOGRAM SEAL 'M' (FOR MITRA) -->
+  <circle cx="300" cy="367" r="46" fill="url(#goldSeal)" filter="url(#softGlow)" stroke="#FFF6D8" stroke-width="2.5"/>
+  <circle cx="300" cy="367" r="41" fill="none" stroke="#FFFFFF" stroke-dasharray="3,3" stroke-width="1.5"/>
+  <text x="300" y="380" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="38" font-weight="bold" fill="#413B3B" text-anchor="middle" letter-spacing="1">M</text>
+</svg>
+

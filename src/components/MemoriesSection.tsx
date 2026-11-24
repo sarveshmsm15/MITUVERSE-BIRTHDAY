@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Camera, Eye, X, Heart } from 'lucide-react';
 import { soundEngine } from '../utils/audio';
+import { getAssetUrl } from '../utils/assets';
 
 interface MemoryItem {
   id: string;
-  assetPath: string;     // "/assets/memories/memory-1.jpg"
+  assetPath: string;     // "assets/memories/memory-1.jpg"
   badge: string;         // e.g. "PURE JOY"
   category: string;      // e.g. "VEETODA HAPPINESS"
   title: string;         // e.g. "The Smile That Lights The House"
@@ -15,7 +16,7 @@ interface MemoryItem {
 const MEMORIES: MemoryItem[] = [
   {
     id: 'mem-1',
-    assetPath: '/assets/memories/memory-1.jpg',
+    assetPath: getAssetUrl('assets/memories/memory-1.jpg'),
     badge: 'PURE JOY',
     category: 'VEETODA HAPPINESS',
     title: 'The Smile That Lights The House',
@@ -24,7 +25,7 @@ const MEMORIES: MemoryItem[] = [
   },
   {
     id: 'mem-2',
-    assetPath: '/assets/memories/memory-2.jpg',
+    assetPath: getAssetUrl('assets/memories/memory-2.jpg'),
     badge: 'ATTITUDE QUEEN',
     category: 'SIGNATURE VIBE',
     title: 'Queen of Little Attitude',
@@ -33,7 +34,7 @@ const MEMORIES: MemoryItem[] = [
   },
   {
     id: 'mem-3',
-    assetPath: '/assets/memories/memory-3.jpg',
+    assetPath: getAssetUrl('assets/memories/memory-3.jpg'),
     badge: 'DEEP TALKS',
     category: 'BROTHER & SISTER',
     title: 'Endless Midnight Conversations',
@@ -42,7 +43,7 @@ const MEMORIES: MemoryItem[] = [
   },
   {
     id: 'mem-4',
-    assetPath: '/assets/memories/memory-4.jpg',
+    assetPath: getAssetUrl('assets/memories/memory-4.jpg'),
     badge: 'PARTNER IN CRIME',
     category: 'LITTLE ADVENTURES',
     title: 'Shopping & Coffee Escapes',
@@ -51,7 +52,7 @@ const MEMORIES: MemoryItem[] = [
   },
   {
     id: 'mem-5',
-    assetPath: '/assets/memories/memory-5.jpg',
+    assetPath: getAssetUrl('assets/memories/memory-5.jpg'),
     badge: 'THE DREAMER',
     category: 'AMBITION & GRACE',
     title: 'The Unstoppable Dreamer',
@@ -60,7 +61,7 @@ const MEMORIES: MemoryItem[] = [
   },
   {
     id: 'mem-6',
-    assetPath: '/assets/memories/memory-6.jpg',
+    assetPath: getAssetUrl('assets/memories/memory-6.jpg'),
     badge: 'FOREVER AMMU',
     category: 'ETERNAL BOND',
     title: 'Always and Forever Kutty Mitu',

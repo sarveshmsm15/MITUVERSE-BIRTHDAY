@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { getAssetUrl } from '../utils/assets';
 
 export default function AudioPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -76,7 +77,7 @@ export default function AudioPlayer() {
   return (
     <audio
       ref={audioRef}
-      src="/assets/music/remo-birthday.mp3"
+      src={getAssetUrl('assets/music/remo-birthday.mp3')}
       loop
       preload="auto"
     />

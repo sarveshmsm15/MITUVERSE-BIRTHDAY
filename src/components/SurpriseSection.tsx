@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Gift, Sparkles, RefreshCw } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { soundEngine } from '../utils/audio';
+import { getAssetUrl } from '../utils/assets';
 
 export default function SurpriseSection() {
   const [isOpened, setIsOpened] = useState(false);
@@ -59,8 +60,8 @@ export default function SurpriseSection() {
 
   // Check if custom png exists in public/assets/gift/gift-box.png, otherwise use realistic SVG
   const giftBoxImageSrc = !customGiftImgFailed 
-    ? '/assets/gift/gift-box.png' 
-    : '/assets/gift/gift-box.svg';
+    ? getAssetUrl('assets/gift/gift-box.png') 
+    : getAssetUrl('assets/gift/gift-box.svg');
 
   return (
     <section id="surprise" className={`relative py-32 px-6 md:px-12 transition-colors duration-1000 overflow-hidden ${

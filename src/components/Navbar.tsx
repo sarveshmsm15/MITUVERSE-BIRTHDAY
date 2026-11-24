@@ -30,12 +30,15 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'Her Story', href: '#love-letter' },
-    { name: 'Little Memories', href: '#memories' },
-    { name: 'Love Notes', href: '#quotes' },
+    { name: 'Unsaid Feelings', href: '#unsaid-feelings' },
+    { name: '29 Wishes', href: '#universe-wishes' },
+    { name: '29 Reasons', href: '#reasons' },
+    { name: 'Troublemaker', href: '#troublemaker' },
+    { name: 'Miss Brother', href: '#miss-brother' },
+    { name: 'Remember', href: '#remember-forever' },
     { name: '29 Surprises', href: '#surprises-29' },
     { name: 'Open When', href: '#open-when' },
-    { name: 'Surprise', href: '#surprise', highlight: true },
+    { name: 'Finale', href: '#finale', highlight: true },
   ];
 
   return (

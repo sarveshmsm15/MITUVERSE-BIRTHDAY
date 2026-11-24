@@ -3,10 +3,15 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import CountdownSection from './components/CountdownSection';
 import LoveLetterSection from './components/LoveLetterSection';
-import ThuglishQuotesSection from './components/ThuglishQuotesSection';
+import UnsaidFeelingsSection from './components/UnsaidFeelingsSection';
+import UniverseWishesSection from './components/UniverseWishesSection';
+import ReasonsSection from './components/ReasonsSection';
+import TroublemakerSection from './components/TroublemakerSection';
+import MissYourBrotherSection from './components/MissYourBrotherSection';
+import RememberForeverSection from './components/RememberForeverSection';
 import MoodGenerator from './components/MoodGenerator';
 import MemoriesSection from './components/MemoriesSection';
-import ReasonsSection from './components/ReasonsSection';
+import ThuglishQuotesSection from './components/ThuglishQuotesSection';
 import SurpriseSection from './components/SurpriseSection';
 import Surprises29Section from './components/Surprises29Section';
 import OpenWhenLettersSection from './components/OpenWhenLettersSection';
@@ -38,31 +43,46 @@ export default function App() {
         {/* 03. The Heartfelt Brother's Love Letter */}
         <LoveLetterSection />
 
-        {/* 04. Thuglish Quotes: Konjam Love... Neraya Sentiment */}
-        <ThuglishQuotesSection />
+        {/* 04. NEW: Unakku Solla Nenacha, Aana Sollama Vitta Vishayangal... (15 Handwritten Notes) */}
+        <UnsaidFeelingsSection />
 
-        {/* 05. Ammu's Mood Generator & Sibling Vibe Check */}
-        <MoodGenerator />
+        {/* 05. NEW: If I Could Give You The World — 29 Celestial Wishes for 29 November */}
+        <UniverseWishesSection />
 
-        {/* 06. Her Special World: Photo Memories (Uniform & Clean) */}
-        <MemoriesSection />
-
-        {/* 07. 10 Reasons Why You're Irreplaceable (Equal 3-in-a-Row Grid) */}
+        {/* 06. UPGRADED: 29 Reasons Why You Are So Special To Me */}
         <ReasonsSection />
 
-        {/* 08. Exclusive Brother's Surprise (Realistic Gift Box & Celebration) */}
+        {/* 07. NEW: MITU CHELLO: Official Troublemaker (Sibling Banter & Awards) */}
+        <TroublemakerSection />
+
+        {/* 08. NEW: Open This When You Miss Your Brother (Interactive Sealed Letter) */}
+        <MissYourBrotherSection />
+
+        {/* 09. NEW: Things I Want You To Remember Forever (Cinematic Life Anchors) */}
+        <RememberForeverSection />
+
+        {/* 10. Ammu's Mood Generator & Sibling Vibe Check */}
+        <MoodGenerator />
+
+        {/* 11. Her Special World: Photo Memories */}
+        <MemoriesSection />
+
+        {/* 12. Thuglish Quotes: Konjam Love... Neraya Sentiment */}
+        <ThuglishQuotesSection />
+
+        {/* 13. Exclusive Brother's Surprise (Realistic Gift Box & Celebration) */}
         <SurpriseSection />
 
-        {/* 09. 29 Little Surprises (Directly Below the Exclusive Surprise) */}
+        {/* 14. 29 Little Surprises (Directly Below the Exclusive Surprise) */}
         <Surprises29Section />
 
-        {/* 10. Open When You Need Me (6 Interactive Sanctuary Envelopes) */}
+        {/* 15. Open When You Need Me (Interactive Sanctuary Envelopes) */}
         <OpenWhenLettersSection />
 
-        {/* 11. Official Royal Citation of Sisterhood */}
+        {/* 16. Official Royal Citation of Sisterhood */}
         <SisterAwardSection />
 
-        {/* 12. Cinematic Finale & Blessing Jar */}
+        {/* 17. Cinematic Finale & 29 Birthday Candles Celebration */}
         <FinalMessageSection />
       </main>
     </div>

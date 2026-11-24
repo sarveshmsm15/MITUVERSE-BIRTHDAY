@@ -35,11 +35,11 @@ const LETTERS: LetterItem[] = [
   {
     id: 3,
     tag: "Letter 03",
-    title: "OPEN WHEN YOU MISS ME",
+    title: "OPEN WHEN YOU MISS YOUR BROTHER",
     emoji: "💌",
     envelopeColor: "from-[#E8EEF5] to-[#FAF7F2]",
     sealColor: "#6A8EB8",
-    messageTamil: "Distance irundhaalum bond change aagathu. Namma pesina silly conversations, jokes, memories ellame enakku special. Nee eppo vena message pannu.",
+    messageTamil: "Hey Mitu chello... Indha letter-ah nee open panra time-la naan un pakkathula irukka vendiyadhu illa. But indha words padikkumbodhu, unakku oru vishayam puriyanum. Nee enakku romba special da. Unna daily paakanum, daily pesanum nu avasiyam illa. But nee en life-la irukkura fact itself enakku happy-ah irukku. Namma relationship-la perfect moments mattum irukkanum nu illa. Sandai, teasing, silly arguments, laughter, ellame irukkattum. Aana oru vishayam mattum change aagakoodaadhu... Indha bond-ah naan romba value panren. Take care of yourself, Ammu. Always keep smiling. - Un Brother",
   },
   {
     id: 4,
